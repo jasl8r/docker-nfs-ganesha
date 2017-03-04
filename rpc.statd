@@ -1,0 +1,3 @@
+#!/usr/bin/execlineb -P
+if { s6-svwait -u /var/run/s6/services/rpcbind }
+rpc.statd -F -L
